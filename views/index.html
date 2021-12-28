@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laba8</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Nodejs приложение Максима Петрова</h1>
+        <form action="/" method="POST" class="save-file">
+            <div class="input-text">
+
+                <div class="input-group">
+                    <label for="text">Текст</label>
+                    <textarea name="text" id="text" cols="50" rows="20"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="options">Опции</label>
+                    <select name="options" id="options">
+                        <option value="full">Все строки</option>
+                        <option value="even">Четные строки</option>
+                        <option value="odd">Нечетные строки</option>
+                    </select>
+
+                    <div class="ctrl">
+                        <button class="modified" type="button" id="modified-btn">Модифицированный файл</button>
+                        <button class="source" type="button" id="source-btn">Исходный файл</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="result" style="display: none;">
+        <div class="source" id="source-place" style="display: none;">
+            <h2>Исходный файл</h2>
+            <p id="source-text">
+                
+            </p>
+        </div>
+
+        <div class="modified" id="modified-place" style="display: none;">
+            <h2>Модифицированный файл</h2>
+            <p id="modified-text">
+                
+            </p>
+        </div>
+    </div>
+    <script async src="js/script.js"></script>
+</body>
+
+</html>
